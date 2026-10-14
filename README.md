@@ -3,7 +3,7 @@
 A phone-friendly Streamlit interface for existing per-ticker TensorFlow LSTM models.
 
 ## Required project files
-
+requirements.txt
 streamlit
 tensorflow==2.20.0
 numpy
@@ -13,15 +13,6 @@ matplotlib
 joblib
 plotly
 
-```
-dse_mobile_app/
-  app.py
-  requirements.txt
-  data/historical_prices.csv
-  models/BRACBANK.keras
-  models/BANKASIA.keras
-  scalers/BRACBANK.joblib
-  scalers/BANKASIA.joblib
 ```
 
 `data/historical_prices.csv` must contain `trading_code,date,close` columns, with at least 20 historical closing prices for each share. Alternative `closep*`/`closep` columns are accepted. The app only lists share codes for which historical prices, model and fitted scaler all exist. It does not provide live DSE data.
