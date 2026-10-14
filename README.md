@@ -5,7 +5,7 @@ A phone-friendly Streamlit interface for existing per-ticker TensorFlow LSTM mod
 ## Required project files
 requirements.txt
 streamlit
-tensorflow==2.20.0
+tensorflow-cup
 numpy
 pandas
 scikit-learn
