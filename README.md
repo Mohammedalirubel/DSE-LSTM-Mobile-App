@@ -4,6 +4,15 @@ A phone-friendly Streamlit interface for existing per-ticker TensorFlow LSTM mod
 
 ## Required project files
 
+streamlit
+tensorflow==2.20.0
+numpy
+pandas
+scikit-learn
+matplotlib
+joblib
+plotly
+
 ```
 dse_mobile_app/
   app.py
