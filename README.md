@@ -1,7 +1,11 @@
 # DSE LSTM Mobile Web App
-
-A phone-friendly Streamlit interface for existing per-ticker TensorFlow LSTM models.
-
+dse-lstm-mobile-app/
+├── app.py
+├── requirements.txt
+├── README.md
+├── models/
+├── scalers/
+└── data/
 ## Required project files
 requirements.txt
 streamlit>=1.40,<2.0
@@ -13,15 +17,7 @@ matplotlib>=3.8,<4.0
 joblib>=1.3,<2.0
 plotly>=5.20,<7.0
 
-dse-lstm-mobile-app/
-├── app.py
-├── requirements.txt
-├── README.md
-├── models/
-├── scalers/
-└── data/
 ```
-
 `data/historical_prices.csv` must contain `trading_code,date,close` columns, with at least 20 historical closing prices for each share. Alternative `closep*`/`closep` columns are accepted. The app only lists share codes for which historical prices, model and fitted scaler all exist. It does not provide live DSE data.
 
 ## Export from the SAME training session
