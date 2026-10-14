@@ -1,18 +1,13 @@
-# DSE LSTM Mobile Web App
-dse-lstm-mobile-app/
-├── app.py
-├── requirements.txt
-├── README.md
-├── models/
-├── scalers/
-└── data/
 ## Required project files
-requirements.txt
-streamlit
-tensorflow-cpu
-numpy
-pandas
-scikit-learn
+
+streamlit>=1.40,<2.0
+tensorflow-cpu==2.20.0
+numpy>=1.26,<3.0
+pandas>=2.0,<3.0
+scikit-learn>=1.4,<2.0
+matplotlib>=3.8,<4.0
+joblib>=1.3,<2.0
+plotly>=5.20,<7.0
 
 ```
 `data/historical_prices.csv` must contain `trading_code,date,close` columns, with at least 20 historical closing prices for each share. Alternative `closep*`/`closep` columns are accepted. The app only lists share codes for which historical prices, model and fitted scaler all exist. It does not provide live DSE data.
