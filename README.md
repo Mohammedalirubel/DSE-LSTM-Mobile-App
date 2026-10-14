@@ -4,7 +4,6 @@ A phone-friendly Streamlit interface for existing per-ticker TensorFlow LSTM mod
 
 ## Required project files
 requirements.txt
-
 streamlit>=1.40,<2.0
 tensorflow-cpu==2.20.0
 numpy>=1.26,<3.0
