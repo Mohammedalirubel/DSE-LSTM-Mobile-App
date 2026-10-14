@@ -4,14 +4,16 @@ A phone-friendly Streamlit interface for existing per-ticker TensorFlow LSTM mod
 
 ## Required project files
 requirements.txt
-streamlit
-tensorflow-cup
-numpy
-pandas
-scikit-learn
-matplotlib
-joblib
-plotly
+
+streamlit>=1.40,<2.0
+tensorflow-cpu==2.20.0
+numpy>=1.26,<3.0
+pandas>=2.0,<3.0
+scikit-learn>=1.4,<2.0
+matplotlib>=3.8,<4.0
+joblib>=1.3,<2.0
+plotly>=5.20,<7.0
+
 dse-lstm-mobile-app/
 ├── app.py
 ├── requirements.txt
