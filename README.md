@@ -12,7 +12,13 @@ scikit-learn
 matplotlib
 joblib
 plotly
-
+dse-lstm-mobile-app/
+├── app.py
+├── requirements.txt
+├── README.md
+├── models/
+├── scalers/
+└── data/
 ```
 
 `data/historical_prices.csv` must contain `trading_code,date,close` columns, with at least 20 historical closing prices for each share. Alternative `closep*`/`closep` columns are accepted. The app only lists share codes for which historical prices, model and fitted scaler all exist. It does not provide live DSE data.
